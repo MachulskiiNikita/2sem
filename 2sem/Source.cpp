@@ -10,5 +10,5 @@ int main()
 	//master
 	//alpha
 	//it's me, Master!
-
+	//beta
 }
