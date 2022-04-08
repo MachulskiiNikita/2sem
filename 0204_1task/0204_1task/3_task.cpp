@@ -97,7 +97,7 @@ private:
 	mutable std::mutex m_mutex;
 };
 
-int main(int argc, char** argv)
+int main2(int argc, char** argv)
 {
 	Threadsafe_Priority_Queue < int > priority_queue;
 
