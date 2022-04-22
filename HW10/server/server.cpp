@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
 {
 	boost::asio::io_service io_service;
 	boost::asio::ip::tcp::endpoint final_point(boost::asio::ip::address_v4::any(), 42);
-	std::string name = "Server: ";
+	std::string name = "Server";
 	boost::asio::ip::tcp::acceptor accptr(io_service, final_point.protocol());
 	accptr.bind(final_point);
 	accptr.listen(10);
