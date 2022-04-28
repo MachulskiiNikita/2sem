@@ -38,7 +38,8 @@ void write_message(boost::asio::ip::tcp::socket& sock, const std::string& name)
 int main(int argc, char* argv[])
 {
 	boost::asio::io_service io_service;
-	boost::asio::ip::tcp::endpoint final_point(boost::asio::ip::address_v4::any(), 42);
+	boost::asio::ip::tcp::endpoint final_point(boost::asio::ip::address_v4::any(), 3333);
+	std::cout << "To leave the chat write QUIT" << std::endl;
 	std::string name = "Server";
 	boost::asio::ip::tcp::acceptor accptr(io_service, final_point.protocol());
 	accptr.bind(final_point);

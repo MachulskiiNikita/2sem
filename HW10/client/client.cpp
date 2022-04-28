@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
 	std::string name;
 	std::cout << "To leave the chat write QUIT\nInput your name:" << std::endl;
 	std::cin >> name;
-	boost::asio::ip::tcp::endpoint final_point(boost::asio::ip::address::from_string(ip_address), 42);
+	boost::asio::ip::tcp::endpoint final_point(boost::asio::ip::address::from_string(ip_address), 3333);
 	boost::asio::ip::tcp::socket socket(io_service, final_point.protocol());
 	socket.connect(final_point);
 
