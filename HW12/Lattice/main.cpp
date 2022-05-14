@@ -39,7 +39,7 @@ int main(int argc, char ** argv)
 			auto position = sf::Vector2f(i * L, j * L) + C;
 
 			particles.push_back(std::make_shared < Particle >(position, position, sf::Vector2f(0.0f, 8.0f), r, (i+j)%2));
-			std::cout << i << " " << j << " " << (i + j) % 2 << '\n';
+			
 		}
 	}
 
