@@ -10,6 +10,8 @@
 #include "link.hpp"
 #include "particle.hpp"
 
+
+
 class System
 {
 public:
@@ -18,9 +20,10 @@ public:
 
 public:
 
-	explicit System(sf::Vector2f min_point, sf::Vector2f max_point, std::vector < particle_t > & particles, const unsigned int A, const float radius_interaction, const float stiffness) noexcept :
+	explicit System(sf::Vector2f min_point, sf::Vector2f max_point, std::vector < particle_t > & particles, const unsigned int A,
+		const float stiffness) noexcept :
 			m_min_point(min_point), m_max_point(max_point), 
-			m_particles(particles), m_A(A), m_radius_interaction(radius_interaction), m_stiffness(stiffness)
+			m_particles(particles), m_A(A), m_stiffness(stiffness)
 	{
 		initialize();
 	}
@@ -52,7 +55,6 @@ public:
 private:
 
 	const unsigned int m_A;
-	const float m_radius_interaction;
 	const float m_stiffness;
 	sf::Vector2f m_min_point;
 	sf::Vector2f m_max_point;
